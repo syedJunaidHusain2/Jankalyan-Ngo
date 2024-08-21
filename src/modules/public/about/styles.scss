@@ -31,10 +31,11 @@
     justify-content: center;
     align-items: center;
     .img-box {
+      padding: 2rem 3rem !important;
       img {
         width: 75rem;
       }
-      padding: 2rem 3rem !important;
+
     }
   }
 }
@@ -44,10 +45,11 @@
     text-align: center;
     .img-box {
       margin-top: 2rem;
+      padding: 2rem 3rem !important;
       img {
         height: 25rem;
       }
-      padding: 2rem 3rem !important;
+      
     }
     button{
       margin: 6px 0;

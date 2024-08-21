@@ -38,18 +38,6 @@
     }
   }
   .content-more {
-    .icon {
-      position: relative;
-      font-size: 30px;
-      top: 2px;
-      background: white;
-      &:hover {
-        cursor: pointer;
-        scale: 1.2;
-        transition: all 0.3s ease-out;
-      }
-    }
-
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -67,6 +55,18 @@
     z-index: 1000;
     overflow-y: scroll;
     overflow-x: hidden;
+    .icon {
+      position: relative;
+      font-size: 30px;
+      top: 2px;
+      background: white;
+      &:hover {
+        cursor: pointer;
+        scale: 1.2;
+        transition: all 0.3s ease-out;
+      }
+    }
+
     p {
       font-family: "Cormorant Garamond", serif;
       font-size: 1.4rem;
@@ -99,6 +99,9 @@
   }
   .hero-inner {
     text-align: center;
+    flex-direction: column;
+    padding: 0rem;
+    gap: 1rem !important;
     h1 {
       text-align: center;
       font-size: 55px;
@@ -107,9 +110,7 @@
     h2 {
       text-align: center;
     }
-    flex-direction: column;
-    padding: 0rem;
-    gap: 1rem !important;
+
   }
 }
 @media (max-width: 350px) {
