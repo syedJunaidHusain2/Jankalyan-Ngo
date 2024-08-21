@@ -1,7 +1,7 @@
 import "./styles.scss";
 import banner2 from "../../../assets/images/about.jpg";
 
-export default function About({ handlePayment }) {
+export default function About() {
   return (
     <section>
       <div className="about-sec max-width content-heading" id="/about">

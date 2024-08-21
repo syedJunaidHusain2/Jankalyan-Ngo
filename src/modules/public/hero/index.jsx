@@ -2,7 +2,7 @@ import "./styles.scss";
 import { useEffect, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 
-export default function Hero({ handlePayment }) {
+export default function Hero() {
   const [toggleData, setToggleData] = useState(false);
   const toggleMore = () => {
     setToggleData(!toggleData);

@@ -7,28 +7,22 @@ import FooterEnd from "../modules/public/footer/FooterEnd";
 import Hero from "../modules/public/hero";
 import Navbar from "../modules/public/navbar";
 import News from "../modules/public/news";
-import Payment from "../modules/public/payment";
 import Topbar from "../modules/public/topbar";
-import { GlobalValue } from "../App";
 import whatsappLink from "../utils/WatsappLink";
 import watsappLogo from "../assets/images/watsap.png";
 export default function Home() {
-  const { togglePayment, handlePayment } = useContext(GlobalValue);
-
   return (
     <section>
       <Topbar />
       <Navbar />
-      <Hero handlePayment={handlePayment} />
-      <About handlePayment={handlePayment} />
+      <Hero  />
+      <About  />
       <Events />
       <News />
       <ContactUs />
-      <Footer handlePayment={handlePayment} />
+      <Footer  />
       <FooterEnd />
-      {togglePayment && (
-        <Payment handlePayment={handlePayment} togglePayment={togglePayment} />
-      )}
+
       <img
         src={watsappLogo}
         alt="watsapp-logo"

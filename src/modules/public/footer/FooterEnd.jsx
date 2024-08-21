@@ -1,34 +1,8 @@
 import { FaInstagram } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
-import { FiYoutube } from "react-icons/fi";
-import { BsTwitterX } from "react-icons/bs";
-import { FaUser } from "react-icons/fa6";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 export default function FooterEnd() {
-  const navigate = useNavigate();
-  // Logic Number of User Visited
-  const [visitorCount, setVisitorCount] = useState(0);
-  useEffect(() => {
-    const existingVisitorId = getVisitorIdFromCookie();
-    if (existingVisitorId) {
-      setVisitorCount(existingVisitorId.split(",").length);
-    } else {
-      const newVisitorId = generateVisitorId();
-      setVisitorCount(1);
-      setVisitorIdCookie(newVisitorId);
-    }
-  }, []);
-  const getVisitorIdFromCookie = () => {
-    const cookie = document.cookie.match(/visitorId=([^;]*)/);
-    return cookie ? cookie[1] : null;
-  };
-  const generateVisitorId = () => {
-    return Math.random().toString(36).substr(2, 9);
-  };
-  const setVisitorIdCookie = (visitorId) => {
-    document.cookie = `visitorId=${visitorId}; max-age=2592000;`;
-  };
+
   return (
     <footer>
       <div className="footer-end max-width">
