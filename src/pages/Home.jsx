@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import About from "../modules/public/about";
 import ContactUs from "../modules/public/contact";
 import Events from "../modules/public/events";
