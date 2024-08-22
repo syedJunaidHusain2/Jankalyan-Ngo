@@ -33,8 +33,8 @@ export default function Footer({ handlePayment }) {
                   style={{ translate: "-0.2rem 3.8px", marginRight: "2px" }}
                 />
                 <span>
-                  SJ/2/204 Sugam Vihar Awas Yojana Kalindipuram ,
-                  PRAYGRAJ-212211 (U.P)
+                  Diamond Colony Kareli ,
+                  PRAYGRAJ (U.P)
                 </span>
               </div>
             </div>
