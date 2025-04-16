@@ -61,6 +61,7 @@ export default function News() {
                       src={item.link}
                       alt={item.paper}
                       className="slider-image"
+                      onClick={() => openImage(item.link)}
                     />
                   </div>
                   <div className="news-details">
