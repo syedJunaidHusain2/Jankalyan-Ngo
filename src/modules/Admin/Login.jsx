@@ -27,7 +27,7 @@ const Login = () => {
         console.log('password',  password);
         
         if (password === savedPassword) {
-          sessionStorage.setItem("isAdmin", true);
+          sessionStorage.setItem("isAdmin", 'true');
           console.log("Login success, redirecting...");
           navigate("/admin");
         } else {
